@@ -1,0 +1,17 @@
+<h1 class="text-center">Task 4</h1>
+
+<div class="container">
+    <div class="row" >
+            <div  *ngFor="let movie of movieArr" class="col-lg-4 border m-8 text-center" >
+                <img src="{{movie.pic}}">
+                <h3>{{movie.name}}</h3>
+                <p><strong>Actors : </strong>{{movie.actors}}</p>
+                <p><strong>Director : </strong>{{movie.director}}</p>
+                <p><strong>Review :</strong> {{movie.reviews}}/5</p>  <span id="rateMe4"  class="feedback"></span>
+                <p><strong>Downloded times :</strong> {{movie.downloadTimes}}</p>
+                <p><strong>Watch Times : </strong> {{movie.watchesTimes}}</p>
+                <a class="btn btn-primary">Watch now</a><a class="btn btn-success">Download</a> 
+            </div>
+    </div>
+</div>
+
